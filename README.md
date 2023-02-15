@@ -3,7 +3,7 @@ In this assignment we were required to implement a simple version of the game **
 and the main focuses of this Assignment were:**Java Concurrency**, **Synchronization** and **Testing**.  
 (The assignment PDF is in the files)   
 
-## What have I learned from this assignment :    
+## What have I learned from this assignment 🤔    
 
 ### - How to use MultiThreading in Java     
   
@@ -30,7 +30,8 @@ And when the dealer checked player 2 set ,he saw that he didn't have 3 cards in 
 main loop of the function where the player is notified.  
 We've dealt with that by making sure the player is notified even if he  doesn't enter the main loop.
   
-### - Using different synchronization tools to ensure thread safety while keeping the program concurrent         
+### - Using different synchronization tools to ensure 
+### thread safety while keeping the program concurrent 🛠️         
 ### - Event Handling using different tools     
     
 ### - Experience in Program flow planning     
