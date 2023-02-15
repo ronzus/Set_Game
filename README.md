@@ -9,7 +9,7 @@ What tools did this assignment give me :
  how , when and why to or why not to use each one of   
  the functions of the thread ,threads management and more.   
    
--> Ability of recognizing and dealing with MultiThreading problems such as deadlocks,livelocks and more -  
+-> How to recognize and deal with MultiThreading problems such as deadlocks,livelocks and more -  
   
 While working on the project , we faced a lot of different problems ,some were easily detectable,      
 for example when unwanted results appeared when we firstly used a queue   
