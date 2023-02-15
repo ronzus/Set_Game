@@ -7,7 +7,7 @@ and the main focuses of this Assignment were:**Java Concurrency**, **Synchroniza
 
 ### - How to use MultiThreading in Java     
   
- **how** , **when** and **why to or why not** to use each one of   
+ **how** , **when** and **why** to **or why not** to use each one of   
  the functions of the Java Thread Class ,threads management and more.   
    
 ### - How to recognize and deal with MultiThreading problems such as deadlocks,livelocks and more   
