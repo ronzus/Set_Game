@@ -34,7 +34,7 @@ We've dealt with that by making sure the player is notified even if he  doesn't 
 ### - How to use different synchronization tools to ensure thread safety 🛠️           
 ### - Event Handling using different tools     
     
-### - Experience in Program flow planning     
+### - Experience in Program flow planning 🗺️     
 by designing the program flow and planing the work strategy beforehand         
 we managed to finish the assignment with all of the available bonus requirements    
 a week before the due date and without adding any additional functions to the original skeleton files given to us.  
