@@ -30,8 +30,7 @@ And when the dealer checked player 2 set ,he saw that he didn't have 3 cards in 
 main loop of the function where the player is notified.  
 We've dealt with that by making sure the player is notified even if he  doesn't enter the main loop.
   
-### - Using different synchronization tools to ensure 
-### thread safety while keeping the program concurrent 🛠️         
+### - How to use different synchronization tools to ensure thread safety 🛠️           
 ### - Event Handling using different tools     
     
 ### - Experience in Program flow planning     
