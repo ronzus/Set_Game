@@ -1,0 +1,62 @@
+BONUS CHALLENGE FORM
+--------------------
+
+For each bonus challenge you have implemented, please replace the sentence "We are not entitled to this bonus."
+with a short description of:
+
+1. How it was implemented in your code
+2. Where it was used (in which class methods).
+3. How you tested that it is working correctly.
+
+--------------------
+
+1. Fully supporting all configuration fields and avoiding the use of magic numbers
+
+1.we used every config field as it was required in the Assignment,and we have avoided the use of magic numbers.
+we wrote explanations about every field.
+2.in almost every class method we used some config fields.
+3.the project runs correctly with the config fields and the result changes accordingly to changing the
+config fields. We played with the config properties and everything worked.
+
+
+--------------------
+
+2. Terminating all threads (that you created) gracefully and in reverse order to the order they were created in.
+
+1.We implemented terminate in the dealer and the player classes in order to achieve this: firstly in the
+players,We notified all the locks (if the player or ai threads are stuck on a lock it will be released) and
+ we changed the boolean volatile terminate to true,and we did a loop for each player in which we called the
+ player terminate method ,in which we unlock the lock(in case he is one of them during this) and then we did
+ join for playerThread and for AI thread.
+2.in run of dealer .
+3.We checked the log files, and it worked as required.
+
+--------------------
+
+3. Handling the config.turnTimeoutMillis value as follows:
+config.turnTimeoutMillis < 0: display nothing.
+config.turnTimeoutMillis = 0: display a timer since the last action (reshuffle or set collected).
+Note: in modes without a countdown timer the dealer must ensure there is always at least one legal set on the table.
+
+1.in Dealer we added fields for the game modes, and we changed the game accordingly,
+for <0 we got rid of the countdown clock, and we made sure that there is always at least one legal set on the table.
+for =0 we add a different timer named timerG2, and we made sure it resets when we do an action and it shows the time since the last action.
+2.where was it used? in Dealer to config the elapsed time and to choose the correct game mode.
+3.we ran the different game modes with all types of config settings and made sure everything worked.
+
+--------------------
+
+4. Making sure that the threads do not wake up unless some actual job needs to be done (e.g., a value needs to be
+changed on the display, key input needs to be handled, etc.) and the only threads created by you are:
+1 thread per player + 1 additional thread for non-human players.
+
+1.We Implemented the project by using mainly synchronization on lock objects ,we made sure the communication
+through the locks are accurate using wait and notify in player and dealer classes ,we used locks in main places
+where communication and waiting and notifying is needed .such as waiting for keypress ,waiting for set claim ,
+waiting for response from the dealer and to control the AI actions.We implemented everything while insuring
+that the thread don't wake up unless some actual job need to be done! In addition,you can see the volatile boolean reset
+and aiLock which made sure that the AI wouldn't work during times he shouldn't work(such as reshuffles) and we blocked the player
+thread using this as well with resLock.
+2.it was used in the player run mainly ,ai run and dealer (wait n notify..)
+3.we debugged all the places where we used the threads and made sure they worked only when they had to and didn't work as required.
+
